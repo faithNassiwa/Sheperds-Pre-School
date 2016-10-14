@@ -1,0 +1,33 @@
+{% extends "website/base.html" %}
+{% load staticfiles %}
+{% block title_block %}Parents| Sheperds Pre School {% endblock %}
+
+
+{% block content %}
+<div class="w3-card-4">
+<div class="col-sm-2">
+		   <!-- Great, til you resize. -->
+			<!--<div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff">-->
+			<div class="well bs-sidebar" id="sidebar" style="background-color:#fff">
+			  <ul class="nav nav-pills nav-stacked">
+				<li><a href="{% url 'administration' %}">Administration</a></li>
+				<li><a href="{% url 'fees' %}">Fees Structure</a></li>
+				<li><a href="{% url 'admission' %}" %}'>Application Form</a></li>
+			  </ul>
+			</div> <!--well bs-sidebar affix-->
+		  </div> <!--col-sm-2-->
+<div class = "col-sm-8">
+<header class="w3-container w3-white">
+  <h1>Parents</h1>
+</header>
+<div class="w3-container">
+At Sheperds Pre School located in Kasangati, we are currently enrolling children in or day care and pre section. We encourage you to learn more about us with the aid of our website or visit any of our social media accounts. Call us or schedule a visit at the school for more details about our current openings for your child.</br>
+ <p>We encourage cooperation between the teachers and parents. Do not hesitate to reach out to us. </p>
+ 
+</div>
+</div>
+</div>
+
+
+
+{% endblock %}

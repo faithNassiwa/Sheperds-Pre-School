@@ -1,0 +1,88 @@
+{% extends "website/base.html" %}
+{% load staticfiles %}
+{% block title_block %}Board Of Directors | About Us | Sheperds Pre School {% endblock %}
+{% block content %}
+<p/><center> <h3>Our Team.</h3> </center>
+
+<div class="w3-container">
+<center>
+  <div class="w3-card-4" style="width:25%">
+    <img src="{% static 'website/images/img_avatar5.jpg' %}" class="w3-circle" alt="Person" style="width:50%">
+    <div class="w3-container">
+      <h4><b>Jane Doe</b></h4>
+      <p>Chair</p>
+    </div>
+  </div>
+  </center>
+ <br/>
+
+  <div class = "row">
+  <div class="w3-card-16 col-sm-3" style="width:25%">
+  <center>
+    <img src="{% static 'website/images/img_avatar3.jpg' %}" class="w3-circle" alt="Person" style="width:50%">
+    <div class="w3-container">
+      <h4><b>John Doe</b></h4>
+      <p>Vice Chair</p>
+      </div>
+      </center>
+    </div>
+   <div class = "col-sm-1"></div>
+  <div class="w3-card-16 col-sm-3" style="width:25%">
+  <center>
+    <img src="{% static 'website/images/img_avatar5.jpg' %}" class="w3-circle" alt="Person" style="width:50%">
+    <div class="w3-container">
+      <h4><b>Jane</b></h4>
+      <p>Secertary</p>
+    </div>
+    </center>
+  </div>
+  <div class = "col-sm-1"></div>
+  <div class="w3-card-4 col-sm-3" style="width:25%">
+  <center>
+    <img src="{% static 'website/images/img_avatar3.jpg' %}" class="w3-circle" alt="Person" style="width:50%">
+    <div class="w3-container">
+      <h4><b>Simon</b></h4>
+      <p>Treasurer</p>
+    </div>
+    </center>
+  </div>
+  </div>  
+  <br/>
+
+ 
+  <div class = "row">
+  <div class="w3-card-16 col-sm-3" style="width:25%">
+  <center>
+    <img src="{% static 'website/images/img_avatar5.jpg' %}" class="w3-circle" alt="Person" style="width:50%">
+    <div class="w3-container">
+      <h4><b>Jane</b></h4>
+      <p>Advisor</p>
+      </div>
+      </center>
+    </div>
+   <div class = "col-sm-1"></div>
+  <div class="w3-card-16 col-sm-3" style="width:25%">
+  <center>
+    <img src="{% static 'website/images/img_avatar5.jpg' %}" class="w3-circle" alt="Person" style="width:50%">
+    <div class="w3-container">
+      <h4><b>Jane</b></h4>
+      <p>Parent Representative</p>
+    </div>
+    </center>
+  </div>
+  <div class = "col-sm-1"></div>
+  <div class="w3-card-4 col-sm-3" style="width:25%">
+  <center>
+    <img src="{% static 'website/images/img_avatar3.jpg' %}" class="w3-circle" alt="Person" style="width:50%">
+    <div class="w3-container">
+      <h4><b>Simon</b></h4>
+      <p>Parent Represenative</p>
+    </div>
+    </center>
+  </div>
+  </div>  
+  <br/>
+</div>
+
+
+{% endblock %}

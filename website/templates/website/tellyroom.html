@@ -1,0 +1,35 @@
+{% extends "website/base.html" %}
+{% load staticfiles %}
+{% block title_block %}Telly Room | Facilities | Sheperds Pre School {% endblock %}
+
+
+{% block content %}
+<div class="w3-card-4">
+<div class="col-sm-2">
+		   <!-- Great, til you resize. -->
+			<!--<div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff">-->
+			<div class="well bs-sidebar" id="sidebar" style="background-color:#fff">
+			  <ul class="nav nav-pills nav-stacked">
+				<li><a href="{% url 'classes' %}">Classes</a></li>
+				<li><a href="{% url 'tellyroom' %}">Telly Room</a></li>
+				<li><a href="{% url 'playground' %}" %}'>Play Ground</a></li>
+				<li><a href="{% url 'kitchen' %}">Kitchen</a></li>
+				<li><a href="{% url 'sickbay' %}">Sick Bay</a></li>
+				<li><a href="{% url 'washrooms' %}">Wash Rooms</a></li>
+			  </ul>
+			</div> <!--well bs-sidebar affix-->
+		  </div> <!--col-sm-2-->
+<div class = "col-sm-8">
+<header class="w3-container w3-white">
+  <h1>Entertainment Room</h1>
+</header>
+<img src="img_car.jpg" alt="Facilities Image" style="width:100%">
+<div class="w3-container">
+  <p>We have a fabulous telly room where the little ones go to watch educative filmings and lots more</p>
+</div>
+</div>
+</div>
+
+
+
+{% endblock %}

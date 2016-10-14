@@ -1,0 +1,37 @@
+{% extends "admission/base.html" %}
+{% load staticfiles %}
+{% block title_block %}Career | Sheperds Pre School {% endblock %}
+{% block content %}
+<div class="w3-card-4">
+<div class="w3-container">
+<header class="w3-container w3-white">
+  <h1>Interested in working at Sheperds Pre School?</h1>
+</header>
+Please fill out the form provided if you are interested in taking up any position provided. All provided information is kept secure and is strictly confidential. 
+<p>Response to applicants is within an hour.</p>
+<br/><br/>
+<div class="col-sm-2"></div>
+<div class="col-sm-8">
+<div class="panel panel-default">
+        <div class = "panel-heading" style="background-color: white"><h4><center>Sheperd Pre School Job Application Form</center></h4></div>
+        <div  class = "panel-body" style="background-color:#ffffff"><form class="form-group" id="user_form" method="post" action="."
+                enctype="multipart/form-data">
+                <center>
+                	{% csrf_token %}
+					{{ form.as_p }}
+					</center>
+
+                  <!-- Provide a button to click to submit the form. -->
+                  <center><input type="submit" name="submit" value="Submit" /></center>
+              </form>
+          </div>
+          </div>   
+     
+</div>
+<div class="col-sm-2"></div>
+</div>
+</div>
+
+
+
+{% endblock %}

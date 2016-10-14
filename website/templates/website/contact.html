@@ -1,0 +1,41 @@
+{% extends "website/base.html" %}
+{% load staticfiles %}
+{% block title_block %}Contact Us | Sheperds Pre School {% endblock %}
+
+
+{% block content %}
+<div class= "row">
+<div class= "col-sm-2"></div>
+<div class="col-sm-5">
+<header class="w3-container w3-teal">
+  <h3>Get in touch with us.</h3>
+</header>
+<br/>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <div class="form-actions">
+      <button type="submit">Send</button>
+    </div>
+</form>
+</div>
+<div class="col-sm-5">
+	<header class="w3-container w3-teal">
+  <h3>Our Address</h3>
+</header>
+<div class="w3-container" line-height:10px>
+  <p>Reach us by post. </p>
+  <br/>
+  <br>Sheperds Pre School.</br>
+  <br>P.O.Box #,</br>
+  <br>Kampala - Uganda.</br>
+  <br>Tel: +256-xxx-xxxxxx.</br>
+
+  
+</div>
+</div>
+
+</div>
+		
+{% endblock %}

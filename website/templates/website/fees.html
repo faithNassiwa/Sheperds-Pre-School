@@ -1,0 +1,36 @@
+{% extends "website/base.html" %}
+{% load staticfiles %}
+{% block title_block %}Fees | Parents | Sheperds Pre School {% endblock %}
+
+
+{% block content %}
+<div class="w3-card-4">
+<div class="col-sm-2">
+		   <!-- Great, til you resize. -->
+			<!--<div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff">-->
+			<div class="well bs-sidebar" id="sidebar" style="background-color:#fff">
+			  <ul class="nav nav-pills nav-stacked">
+				<li><a href="{% url 'administration' %}">Administration</a></li>
+				<li><a href="{% url 'fees' %}">Fees Structure</a></li>
+				<li><a href="{% url 'admission' %}" %}'>Application Form</a></li>
+			  </ul>
+			</div> <!--well bs-sidebar affix-->
+		  </div> <!--col-sm-2-->
+<div class = "col-sm-8">
+<header class="w3-container w3-white">
+  <h1>Fees Structure</h1>
+</header>
+<div class="w3-container">
+Fees payment can be made at any one of XXXXX Bank branch to our account number provided on the bank drafts. You can also use mobile money to pay us directly and not face the problem of long queues at the Bank.</br>
+ <p>Installment Payments are also accepted, get in touch with our administration to establish a suitable payment plan to ensure a mutually beneficial relationship.</p>
+ <br/><div class="row"><div class="col-sm-3"><strong>Day Care</strong></div><div class="col-sm-3">UGX 350,000</div><div class="col-sm-3">UGX 120,000</div></div>
+  <br/><div class="row"><div class="col-sm-3"><strong>Baby Class </strong></div><div class="col-sm-3">UGX 350,000</div><div class="col-sm-3">UGX 120,000</div></div>
+  <br/><div class="row"><div class="col-sm-3"><strong>Middle Class </strong></div><div class="col-sm-3">UGX 350,000</div><div class="col-sm-3">UGX 120,000</div></div>
+  <br/><div class="row"><div class="col-sm-3"><strong>Top Class </strong></div><div class="col-sm-3">UGX 350,000</div><div class="col-sm-3">UGX 120,000</div></div>
+</div>
+</div>
+</div>
+
+
+
+{% endblock %}

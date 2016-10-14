@@ -1,0 +1,26 @@
+{% extends "website/base.html" %}
+{% load staticfiles %}
+{% block title_block %}Careers | Sheperds Pre School {% endblock %}
+
+
+{% block content %}
+<div class= "row">
+<div class= "col-sm-2"></div>
+<div class="col-sm-5">
+<header class="w3-container w3-teal">
+  <h3>Apply now.</h3>
+</header>
+<br/>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <div class="form-actions">
+      <button type="submit">Send</button>
+    </div>
+</form>
+</div>
+
+</div>
+		
+{% endblock %}

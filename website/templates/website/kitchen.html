@@ -1,0 +1,41 @@
+{% extends "website/base.html" %}
+{% load staticfiles %}
+{% block title_block %}Kitchen | Facilities | Sheperds Pre School {% endblock %}
+
+{% block content %}
+<div class="w3-card-4">
+<div class="col-sm-2">
+		   <!-- Great, til you resize. -->
+			<!--<div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff">-->
+			<div class="well bs-sidebar" id="sidebar" style="background-color:#fff">
+			  <ul class="nav nav-pills nav-stacked">
+				<li><a href="{% url 'classes' %}">Classes</a></li>
+				<li><a href="{% url 'tellyroom' %}">Telly Room</a></li>
+				<li><a href="{% url 'playground' %}" %}'>Play Ground</a></li>
+				<li><a href="{% url 'kitchen' %}">Kitchen</a></li>
+				<li><a href="{% url 'sickbay' %}">Sick Bay</a></li>
+				<li><a href="{% url 'washrooms' %}">Wash Rooms</a></li>
+			  </ul>
+			</div> <!--well bs-sidebar affix-->
+		  </div> <!--col-sm-2-->
+<div class = "col-sm-10">
+<header class="w3-container w3-white">
+  <h1>Kitchen</h1>
+</header>
+<img src="img_car.jpg" alt="Facilities Image" style="width:100%">
+<div class="w3-container">
+  <p>We have a kitchen where all the meals that the children eat are prepared. We are very cautios about the childrens diet, we ensure that they are provided with a well balanced diet and we also cater to any dietry restrictions that any child has. </p>
+  <p> These meals that we provide are as listed below: - </p>
+  <br/><div class="row"><div class="col-sm-2"><strong>Tea Time</strong></div><div class="col-sm-2"><strong>8:00am to 9:00am</strong></div><div class="col-sm-3">Porridge</div><div class="col-sm-3">Porridge</div></div>
+  <br/><div class="row"><div class="col-sm-2"><strong>Break Time  </strong></div><div class="col-sm-2"><strong>10:0am to 10:30am</strong></div><div class="col-sm-3">Porridge</div><div class="col-sm-3">Porridge</div></div>
+  <br/><div class="row"><div class="col-sm-2"><strong>Morning Snack Time </strong></div><div class="col-sm-2"><strong>12:00pm to 12:30pm</strong></div><div class="col-sm-3">Porridge</div><div class="col-sm-3">Porridge</div></div>
+  <br/><div class="row"><div class="col-sm-2"><strong>Lunch Time </strong></div><div class="col-sm-2"><strong>1:30pm to 2:30pm</strong></div><div class="col-sm-3">Porridge</div><div class="col-sm-3">Porridge</div></div>
+  <br/><div class="row"><div class="col-sm-2"><strong>Afternoon Snack Time </strong></div><div class="col-sm-2"><strong>4:30pm to 5:00pm</strong></div><div class="col-sm-3">Porridge</div><div class="col-sm-3">Porridge</div></div>
+  <p></p>
+</div>
+</div>
+</div>
+
+
+
+{% endblock %}
