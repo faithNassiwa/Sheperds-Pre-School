@@ -136,11 +136,11 @@ ADMIN_TOOLS_APP_INDEX_DASHBOARD = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'sheperd',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': '',
-        'PORT': '',
+        'NAME': 'dmnqimumac8ga',
+        'USER': 'nldvtzpiuxbgfb',
+        'PASSWORD': 'qpVyfoEvk4bxpiz73TqA6nYXN6',
+        'HOST': 'ec2-23-23-76-90.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
