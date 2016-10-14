@@ -1,6 +1,7 @@
 Django==1.9.7
 django-admin-tools==0.7.2
 django-contact-form==1.2
+psycopg2
 dj-database-url==0.4.1
 gunicorn==19.6.0
 whitenoise==3.2.2
