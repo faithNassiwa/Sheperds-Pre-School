@@ -32,7 +32,7 @@ SECRET_KEY = '-)=vzzr9hc6_4^v(5w9_s^=5c3bs%(3@v5dlx9v)ixq4#q)*3l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['sheperdspreschool.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['sheperdspreschool.herokuapp.com']
 
 EMAIL_USE_TLS = True  
 EMAIL_HOST = 'smtp.gmail.com'  
@@ -183,7 +183,7 @@ USE_L10N = True
 USE_TZ = True
 
 # Allow all host headers
-ALLOWED_HOSTS = ['sheperdspreschool.herokuapp.com', 'localhost']
+#ALLOWED_HOSTS = ['sheperdspreschool.herokuapp.com', 'localhost']
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
@@ -197,7 +197,7 @@ STATIC_URL = '/static/'
 #)
 
 
-9955
+
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 
