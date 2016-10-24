@@ -183,7 +183,7 @@ USE_L10N = True
 USE_TZ = True
 
 # Allow all host headers
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [''sheperdspreschool.herokuapp.com', 'localhost'']
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
