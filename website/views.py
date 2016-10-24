@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpResponseRedirect
 from django.core.mail import send_mail, BadHeaderError
 from .forms import *
+from django.shortcuts import render_to_response
+from django.template import RequestContext
 
 # Create your views here.
 
@@ -105,6 +107,21 @@ def sickbay(request):
 def washrooms(request):
 	return render(request, 'website/washrooms.html')		
 
+
+
+
+def handler404(request):
+    response = render_to_response('404.html', {},
+                                  context_instance=RequestContext(request))
+    response.status_code = 404
+    return response
+
+
+def handler500(request):
+    response = render_to_response('500.html', {},
+                                  context_instance=RequestContext(request))
+    response.status_code = 500
+    return response
 
 
 
