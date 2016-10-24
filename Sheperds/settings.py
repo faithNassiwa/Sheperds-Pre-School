@@ -29,10 +29,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '-)=vzzr9hc6_4^v(5w9_s^=5c3bs%(3@v5dlx9v)ixq4#q)*3l'
 
+ALLOWED_HOSTS = ['sheperdspreschool.herokuapp.com']
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['sheperdspreschool.herokuapp.com']
+
 
 EMAIL_USE_TLS = True  
 EMAIL_HOST = 'smtp.gmail.com'  
@@ -191,11 +193,6 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 
 STATIC_URL = '/static/'
-
-#STATICFILES_DIRS = (
-    #os.path.join(PROJECT_ROOT, 'static'),
-#)
-
 
 
 # Simplified static file serving.
