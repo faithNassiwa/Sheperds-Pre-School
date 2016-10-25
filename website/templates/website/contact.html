@@ -5,13 +5,12 @@
 
 {% block content %}
 <div class= "row">
-<div class= "col-sm-2"></div>
-<div class="col-sm-7">
+<div class= "col-sm-6"></div>
+<div class="col-sm-4">
 <center>
 <header class="w3-container w3-white">
   <h3>Get in touch with us.</h3>
 </header>
-<br/>
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
@@ -22,7 +21,7 @@
 </form>
 </center>
 </div>
-<div class="col-sm-3">
+<div class="col-sm-2">
 	<header class="w3-container w3-teal">
   <h3>Our Address</h3>
 </header>
