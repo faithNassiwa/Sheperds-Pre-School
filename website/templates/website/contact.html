@@ -1,4 +1,5 @@
 {% extends "website/base.html" %}
+{% load bootstrap3 %}
 {% load staticfiles %}
 {% block title_block %}Contact Us | Sheperds Pre School {% endblock %}
 
@@ -9,28 +10,8 @@
 </div>
 <br/>
 <div class= "row">
-<div class= "col-sm-2">
-</div>
-<div class="col-sm-7">
-<center>
+<div class= "col-sm-3">
 <header class="w3-container w3-teal">
-  <h3>Get in touch with us.</h3>
-</header>
-<br/><br/>
-<legend>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-
-    <div class="form-actions">
-      <button type="submit">Send</button>
-    </div>
-</form>
-</legend>
-</center>
-</div>
-<div class="col-sm-3">
-	<header class="w3-container w3-teal">
   <h3>Our Address</h3>
 </header>
 <div class="w3-container" line-height:10px>
@@ -39,11 +20,25 @@
   <br>Sheperds Pre School.
   <br>P.O.Box #,
   <br>Kampala - Uganda.
-  <br>Tel: +256-xxx-xxxxxx.
+  <br>Tel: +256-xxx-xxxxxx. 
+</div>
+</div>
 
-  
+<div class="col-sm-8">
+<header class="w3-container w3-teal">
+  <h3>Get in touch with us.</h3>
+</header>
+<br/><br/>
+<form method="post" class="form">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+
+    {% buttons %}
+      <button name="submit" class="btn">Send</button>
+    {% endbuttons %}
+</form>
 </div>
-</div>
+<div class="col-sm-1"></div>
 
 </div>
 		
