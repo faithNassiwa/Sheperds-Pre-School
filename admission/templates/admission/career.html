@@ -1,5 +1,6 @@
 {% extends "website/base.html" %}
 {% load staticfiles %}
+{% load bootstrap3 %}
 {% block title_block %}Career | Sheperds Pre School {% endblock %}
 {% block content %}
 <div class="w3-card-4">
@@ -14,15 +15,16 @@ Please fill out the form provided if you are interested in taking up any positio
 <div class="col-sm-8">
 <div class="panel panel-default">
         <div class = "panel-heading" style="background-color: white"><h4><center>Sheperd Pre School Job Application Form</center></h4></div>
-        <div  class = "panel-body" style="background-color:#ffffff"><form class="form-group" id="user_form" method="post" action="."
+        <div  class = "panel-body" style="background-color:#ffffff"><form class="form" id="user_form" method="post" action="."
                 enctype="multipart/form-data">
                 <center>
                 	{% csrf_token %}
-					{{ form.as_p }}
-					</center>
+        					{% bootstrap_form form %}
 
-                  <!-- Provide a button to click to submit the form. -->
-                  <center><input type="submit" name="submit" value="Submit" /></center>
+                  {% buttons %}
+                    <button name="submit" class="btn">Send</button>
+                  {% endbuttons %}
+                  </center>
               </form>
           </div>
           </div>   

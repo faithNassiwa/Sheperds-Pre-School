@@ -1,5 +1,6 @@
 {% extends "website/base.html" %}
 {% load staticfiles %}
+{% load staticfiles %}
 {% block title_block %}Application Form | Parents | Sheperds Pre School {% endblock %}
 
 
@@ -34,10 +35,11 @@ Please fill out the form provided if you are interested in enrolling your child 
                 enctype="multipart/form-data">
 
                 	{% csrf_token %}
-					{{ form.as_p }}
+					{% bootstrap_form form %}
 
-                  <!-- Provide a button to click to submit the form. -->
-                  <center><input type="submit" name="submit" value="Submit" /></center>
+				    {% buttons %}
+				      <button name="submit" class="btn">Send</button>
+				    {% endbuttons %}
               </form>
           </div>
           </div>

@@ -5,6 +5,7 @@ class ContactForm(forms.Form):
 	your_email = forms.EmailField(required=True)
 	subject = forms.CharField(required=True)
 	message = forms.CharField(widget=forms.Textarea)
+	
 
 class CareerForm(forms.Form):
 	name = forms.CharField(required = True)
