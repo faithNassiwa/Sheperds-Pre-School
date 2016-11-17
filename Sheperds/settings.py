@@ -27,7 +27,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = '-)=vzzr9hc6_4^v(5w9_s^=5c3bs%(3@v5dlx9v)ixq4#q)*3l'
 SECRET_KEY = os.environ['SHEPERDS_SECRET_KEY']
 
 ALLOWED_HOSTS = ['sheperdspreschool.herokuapp.com']
@@ -145,9 +144,9 @@ ADMIN_TOOLS_APP_INDEX_DASHBOARD = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dmnqimumac8ga',
-        'USER': 'nldvtzpiuxbgfb',
-        'PASSWORD': 'qpVyfoEvk4bxpiz73TqA6nYXN6',
+        'NAME': os.environ['SHEPERDS_DB_NAME'],
+        'USER': os.environ['SHEPERDS_DB_USER'],
+        'PASSWORD': os.environ['SHEPERDS_DB_PASSWORD'],
         'HOST': 'ec2-23-23-76-90.compute-1.amazonaws.com',
         'PORT': '5432',
     }
